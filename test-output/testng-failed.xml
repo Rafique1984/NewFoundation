@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [EliteCarrer Automation Suite]">
+  <test name="EliteCareer Regression Test(failed)">
+    <classes>
+      <class name="tests.TestRegitrationPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.TestRegitrationPage -->
+      <class name="tests.TestSigninPage">
+        <methods>
+          <include name="print"/>
+          <include name="signinPage" invocation-numbers="1 2 3 4 5"/>
+          <include name="classSetUp"/>
+          <include name="MethodEnd"/>
+        </methods>
+      </class> <!-- tests.TestSigninPage -->
+    </classes>
+  </test> <!-- EliteCareer Regression Test(failed) -->
+</suite> <!-- Failed suite [EliteCarrer Automation Suite] -->

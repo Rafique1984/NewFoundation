@@ -1,0 +1,9 @@
+ .classpath
+	new file:   .project
+	new file:   .settings/org.eclipse.core.resources.prefs
+	new file:   .settings/org.eclipse.jdt.core.prefs
+	new file:   .settings/org.eclipse.m2e.core.prefs.classpath
+.project
+.settings/
+
+

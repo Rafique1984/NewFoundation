@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="0" ignored="2" total="8" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EliteCarrer Automation Suite" duration-ms="14887" started-at="2017-07-14T21:46:53Z" finished-at="2017-07-14T21:47:08Z">
+    <groups>
+    </groups>
+    <test name="EliteCareer Regression Test" duration-ms="14887" started-at="2017-07-14T21:46:53Z" finished-at="2017-07-14T21:47:08Z">
+      <class name="tests.TestSigninPage">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="classSetUp" is-config="true" duration-ms="2946" started-at="2017-07-14T17:46:53Z" finished-at="2017-07-14T17:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="PASS" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="9998" started-at="2017-07-14T17:46:57Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ibrahim10346@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[anika123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="PASS" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:46:57Z" finished-at="2017-07-14T17:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="FAIL" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:07Z" finished-at="2017-07-14T17:47:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signinPage status=SUCCESS method=TestSigninPage.signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="SKIP" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="1" started-at="2017-07-14T17:47:08Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shakil_ipe@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a365827]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="SKIP" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="SKIP" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="0" started-at="2017-07-14T17:47:08Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tushar_831@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tamannac90]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="SKIP" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="SKIP" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="0" started-at="2017-07-14T17:47:08Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shakil_ipe@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidpassword]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="SKIP" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="1" started-at="2017-07-14T17:47:08Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nurul@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A365827]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="SKIP" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="SKIP" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="print()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="print" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method status="SKIP" signature="signinPage(java.lang.String, java.lang.String)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="signinPage" duration-ms="1" started-at="2017-07-14T17:47:08Z" data-provider="elitecareerData" finished-at="2017-07-14T17:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mdnizamul831@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tamannac90]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1401)
+	at org.apache.commons.mail.Email.send(Email.java:1428)
+	at utils.SendEmail.sendEmailNotification(SendEmail.java:30)
+	at tests.TestSigninPage.MethodEnd(TestSigninPage.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsn
+534-5.7.14 ZAveIM5sEMbSOTTFRq9ZzWkiI-3FXX5W-D30-aSLgTUK_0hNkQVaeatYq7V1yVhD5Ull2W
+534-5.7.14 5X9GdASb-fJsmz4It3kJM8ooa5H2ECkOZNhIuLV95NAx1nB0DOhumUymZDEGvdMn_ZokiI
+534-5.7.14 xsI8YyrmbujD_DTxU8P7bQ2aqCN5GKN1bko4QjJ_CBzeyH9RQrSorK-6hKc2rYfsNZuMBs
+534-5.7.14 0ecB2SpKuT2VOcdYTom4z0vCn4O7Q> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c199sm1819819qka.9 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:823)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:756)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:673)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1391)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinPage -->
+        <test-method status="SKIP" signature="MethodEnd(org.testng.ITestResult)[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="MethodEnd" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MethodEnd -->
+        <test-method status="SKIP" signature="classTeardown()[pri:0, instance:tests.TestSigninPage@4f7d0008]" name="classTeardown" is-config="true" duration-ms="0" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+      </class> <!-- tests.TestSigninPage -->
+      <class name="tests.TestRegitrationPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TestRegitrationPage@553f17c]" name="setUp" is-config="true" duration-ms="4469" started-at="2017-07-14T17:46:49Z" finished-at="2017-07-14T17:46:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestRegitrationPage@553f17c]" name="tearDown" is-config="true" duration-ms="80" started-at="2017-07-14T17:47:08Z" finished-at="2017-07-14T17:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestRegitrationPage -->
+    </test> <!-- EliteCareer Regression Test -->
+  </suite> <!-- EliteCarrer Automation Suite -->
+</testng-results>
